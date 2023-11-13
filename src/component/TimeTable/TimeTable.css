@@ -1,0 +1,12 @@
+.data-detailes ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.data-detailes ul li{
+    list-style: none;
+    background-color: yellow;
+    margin: 5px;
+    padding: 5px;
+    width: 70px;
+}

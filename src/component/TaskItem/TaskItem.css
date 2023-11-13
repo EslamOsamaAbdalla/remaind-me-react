@@ -1,0 +1,17 @@
+.data-real ul li{
+    list-style:decimal;
+    background-color: yellow;
+    margin: 5px;
+    padding: 5px;
+}
+.task-time{
+    margin: 15px;
+}
+.task-edit, .task-delete{
+    margin: 0 15px;
+    padding: 5px;
+    background-color: beige;
+    outline: 0;
+    border-radius: 5px;
+    text-transform: capitalize;
+}

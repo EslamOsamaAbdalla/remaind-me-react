@@ -1,0 +1,33 @@
+#container{
+    width: 80vw;
+    height: 80vh;
+    background-color: #a31a1a;;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+#container h2{
+    background-color: yellow;
+    display: flex;
+    min-height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.data{
+    display: flex;
+}
+.data-real ,.data-detailes{
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    #container{
+        width: 90vw;
+        height: 90vh;
+    }
+    .data{
+        flex-direction: column;
+    }
+    .data-real, .data-detailes{
+        width: 100%;
+    }
+}
