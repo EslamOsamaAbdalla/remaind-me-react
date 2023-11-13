@@ -2,11 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .data-detailes ul li{
     list-style: none;
     background-color: yellow;
     margin: 5px;
     padding: 5px;
-    width: 70px;
+    width: 60px;
+    text-align: center;
+}
+@media screen and (max-width: 860px) {
+    .data-detailes ul {
+        padding: 0;
+    }
 }

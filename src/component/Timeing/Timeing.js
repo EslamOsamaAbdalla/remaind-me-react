@@ -9,9 +9,12 @@ function Timeing() {
     }, [])
     let time = ()=>{
         let Hours = new Date().getHours()
-        let tMinutes = new Date().getMinutes()
+        let Minutes = new Date().getMinutes()
         let Seconds = new Date().getSeconds()
-        return `${Hours} : ${tMinutes} : ${Seconds}`
+        let HoursEnd = Hours < 10 ? `0${Hours}` : `${Hours}`
+        let MinutesEnd = Minutes < 10 ? `0${Minutes}` : `${Minutes}`
+        let SecondsEnd = Seconds < 10 ? `0${Seconds}` : `${Seconds}`
+        return  `${HoursEnd} : ${MinutesEnd} : ${SecondsEnd}`
     }
     return (
         <div className="time-now">

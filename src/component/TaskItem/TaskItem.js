@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import "./TaskItem.css"
-function TaskItem({taskName, taskDay, taskTime}) {
-    const deleteIt = (e)=>{
-        let elem = e.target.parentElement
-        console.log(elem)
+function TaskItem({taskName, taskTime, allTasks, setallTasks}) {
+    const [checkMark, setCheckMark] = useState(false)
+    const taskElement = useRef("")
+    const deleteIt = ()=>{
+        let updatedData = allTasks.filter((i)=>{
+            return i[0] !== taskName
+        })
+        setallTasks(updatedData)
+    }
+    const chekMark = (checked)=>{
+        setCheckMark(checked)
+        if (taskElement.current.style.backgroundColor == "green") {
+            taskElement.current.style.textDecoration = "none"
+            taskElement.current.style.backgroundColor = "yellow"
+        } else {
+            taskElement.current.style.textDecoration = "line-through"
+            taskElement.current.style.backgroundColor = "green"
+        }
     }
     return (
-        <li>
+        <li ref={taskElement}>
             <span className="task-name">{taskName}</span> 
             <span className="task-time"> {taskTime}</span> 
-            <button className="task-edit">edit</button>
             <button className="task-delete" onClick={deleteIt}>delete</button>
-            <input type='checkbox'/>
+            <input type='checkbox' checked={checkMark} onChange={(e)=>{chekMark(e.target.checked)}}/>
         </li>
     )
 }

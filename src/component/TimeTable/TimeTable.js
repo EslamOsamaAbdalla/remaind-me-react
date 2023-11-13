@@ -12,7 +12,7 @@ function TimeTable() {
     return (
         <ul>
             {dayArr.map((i)=>{
-                return  <li key={i} className="time-table"> {i} : 00</li>
+                return  i < 10 ? <li key={i} className="time-table"> 0{i}:00</li> : <li key={i} className="time-table"> {i}:00</li>
             })}
         </ul>
     )

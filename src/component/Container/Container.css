@@ -19,7 +19,12 @@
 .data-real ,.data-detailes{
     width: 50%;
 }
-@media screen and (max-width: 768px) {
+.data-detailes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 860px) {
     #container{
         width: 90vw;
         height: 90vh;

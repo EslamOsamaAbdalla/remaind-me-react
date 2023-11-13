@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import "./CreateTask.css"
-function CreateTask({settaskItem, taskItem}) {
+function CreateTask({settaskItem}) {
     const elem = useRef(0)
     const taskName = useRef("")
     const taskDay = useRef("")
