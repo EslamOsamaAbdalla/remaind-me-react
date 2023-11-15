@@ -12,8 +12,8 @@ function TaskItem({taskName, taskTime, allTasks, setallTasks}) {
     const chekMark = (checked)=>{
         setCheckMark(checked)
         if (taskElement.current.style.backgroundColor == "green") {
+            taskElement.current.style.backgroundColor = "#BE3144"
             taskElement.current.style.textDecoration = "none"
-            taskElement.current.style.backgroundColor = "yellow"
         } else {
             taskElement.current.style.textDecoration = "line-through"
             taskElement.current.style.backgroundColor = "green"
@@ -23,8 +23,8 @@ function TaskItem({taskName, taskTime, allTasks, setallTasks}) {
         <li ref={taskElement}>
             <span className="task-name">{taskName}</span> 
             <span className="task-time"> {taskTime}</span> 
-            <button className="task-delete" onClick={deleteIt}>delete</button>
             <input type='checkbox' checked={checkMark} onChange={(e)=>{chekMark(e.target.checked)}}/>
+            <button className="task-delete" onClick={deleteIt}>delete</button>
         </li>
     )
 }

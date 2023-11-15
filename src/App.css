@@ -1,3 +1,9 @@
+:root{
+    --main-color: #22092C;
+    --secound-color: #872341;
+    --third-color: #BE3144;
+    --forth-color: #F05941;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -11,4 +17,5 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(45deg, var(--secound-color), var(--third-color));
 }

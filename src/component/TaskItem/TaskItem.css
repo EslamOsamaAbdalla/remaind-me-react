@@ -1,17 +1,20 @@
 .data-real ul li{
-    list-style:decimal;
-    background-color: yellow;
+    background-color: var(--third-color);
+    color: var(--main-color);
     margin: 5px;
-    padding: 5px;
+    padding: 15px;
 }
 .task-time{
     margin: 15px;
 }
 .task-edit, .task-delete{
+    text-transform: capitalize;
+    cursor: pointer;
     margin: 0 15px;
-    padding: 5px;
-    background-color: beige;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--third-color);
+    border: 0;
     outline: 0;
     border-radius: 5px;
-    text-transform: capitalize;
 }

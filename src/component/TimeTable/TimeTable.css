@@ -6,11 +6,15 @@
 }
 .data-detailes ul li{
     list-style: none;
-    background-color: yellow;
+    background-color: var(--third-color);
+    color: var(--main-color);
     margin: 5px;
     padding: 5px;
     width: 60px;
     text-align: center;
+}
+.glow{
+    background-color: green !important;
 }
 @media screen and (max-width: 860px) {
     .data-detailes ul {

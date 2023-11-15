@@ -50,7 +50,7 @@ function Container() {
           </ul>
         </div>
         <div className="data-detailes">
-          <TimeTable/>
+          <TimeTable tasksByDay={tasksByDay}/>
           <Timeing/>
         </div>
       </div>

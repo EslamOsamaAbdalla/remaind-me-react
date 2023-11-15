@@ -1,6 +1,10 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import "./TimeTable.css"
-function TimeTable() {
+function TimeTable({tasksByDay}) {
+    useEffect(() => {
+        drawTime()
+    }, [tasksByDay])
+    
     let dayArr = []
     let dayTime = ()=>{
     let days = 24;
@@ -8,12 +12,24 @@ function TimeTable() {
         dayArr.push(i)
         }
     }
+    const makeTimeGlow = (time)=>{
+        let taskDone = tasksByDay.filter(i=>{
+            return i[2] == time
+        })
+        if (taskDone.length != 0) {
+            return true
+        }
+    }
+    const drawTime=()=>{
+        return dayArr.map((i)=>{
+            return  i < 10 ? <li key={i} className={`time-table ${makeTimeGlow("0"+i+":00") ? "glow" : ""}`}> 0{i}:00</li> 
+            : <li key={i} className={`time-table ${makeTimeGlow(i+":00") ? "glow" : ""}`}> {i}:00</li>
+        })
+    }
     dayTime()
     return (
         <ul>
-            {dayArr.map((i)=>{
-                return  i < 10 ? <li key={i} className="time-table"> 0{i}:00</li> : <li key={i} className="time-table"> {i}:00</li>
-            })}
+            {drawTime()}
         </ul>
     )
 }
