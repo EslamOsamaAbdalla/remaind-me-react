@@ -12,10 +12,11 @@
     cursor: pointer;
 }
 .add-task-page{
+    --main-color: #22092cd1;
     position: absolute;
     left: 5%;
     top: 5%;
-    background-color: rgba(0, 0, 0, 0.832);
+    background-color: var(--main-color);
     width: 90%;
     height: 90%;
     display: none;
