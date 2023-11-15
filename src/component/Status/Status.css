@@ -1,4 +1,4 @@
 #container h2 .state{
-    background-color: green;
+    background-color: var(--forth-color);
     padding: 8px;
 }

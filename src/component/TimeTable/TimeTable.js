@@ -14,7 +14,7 @@ function TimeTable({tasksByDay}) {
     }
     const makeTimeGlow = (time)=>{
         let taskDone = tasksByDay.filter(i=>{
-            return i[2] == time
+            return i[2] == time || i[2].slice(0,2)== time.slice(0,2)
         })
         if (taskDone.length != 0) {
             return true
