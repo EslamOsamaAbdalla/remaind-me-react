@@ -20,4 +20,5 @@
 }
 .checked{
     background-color: var(--forth-color) !important;
+    text-decoration:line-through
 }

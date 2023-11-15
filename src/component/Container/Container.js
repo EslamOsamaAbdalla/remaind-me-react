@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./Container.css"
 import Timeing from "../Timeing/Timeing";
 import TimeTable from "../TimeTable/TimeTable";
@@ -44,9 +44,9 @@ function Container() {
       <div className="data">
         <div className="data-real">
           <ul>
-          {tasksByDay && tasksByDay.map((i,y)=>{
+          {tasksByDay ? tasksByDay.map((i,y)=>{
             return  <TaskItem key={y} taskName={i[0]} taskTime={i[2]} setallTasks={setallTasks} allTasks={allTasks}/>
-          })}
+          }) : "no Tasks"}
           </ul>
         </div>
         <div className="data-detailes">
