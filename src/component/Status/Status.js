@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./Status.css"
-function Status() {
+function Status({tasksByDay}) {
+    const [status, setstatus] = useState(false)
+    useEffect(() => {
+        tasksByDay.length >= 1 ? setstatus(true) : setstatus(false)
+    }, [tasksByDay])
+    
     return (
         <span className="state">
-            active
+            {status ? "Active" : "Not Active"}
         </span>
     )
 }

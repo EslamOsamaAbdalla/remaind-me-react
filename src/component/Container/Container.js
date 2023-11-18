@@ -40,7 +40,7 @@ function Container() {
   }
   return (
     <div id="container">
-      <h2> <DateComponent day={day}/>  <Status/></h2>
+      <h2> <DateComponent day={day}/>  <Status tasksByDay={tasksByDay}/></h2>
       <div className="data">
         <div className="data-real">
           <ul>
