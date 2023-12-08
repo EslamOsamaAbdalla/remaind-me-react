@@ -19,7 +19,7 @@ function Container() {
   }, [allTasks])
   useEffect(() => {
     let filterItAll = allTasks
-    filterItAll.filter((i)=>{return i.length !== 0})
+    filterItAll.filter(i=>{return i.length !== 0})
     setallTasks(filterItAll)
   }, [])
   let day = ()=>{
@@ -32,11 +32,15 @@ function Container() {
     let year = new Date().getFullYear()
     let mounth = new Date().getMonth() + 1
     let day = new Date().getDate()
-    let thisDay = `${year}-${mounth}-${day}`
-    let theFilter = allTasks.filter((x)=>{
-      return x[1] == thisDay
-    })
-    settasksByDay(theFilter)
+    if (day < 10) {
+      let thisDay = `${year}-${mounth}-0${day}`
+      let theFilter = allTasks.filter(x=>{return x[1] == thisDay})
+      settasksByDay(theFilter)
+    } else {
+      let thisDay = `${year}-${mounth}-${day}`
+      let theFilter = allTasks.filter(x=>{return x[1] == thisDay})
+      settasksByDay(theFilter)
+    }
   }
   return (
     <div id="container">

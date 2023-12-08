@@ -12,7 +12,7 @@ function TimeTable({tasksByDay}) {
         dayArr.push(i)
         }
     }
-    const makeTimeGlow = (time)=>{
+    const makeTimeGlow = time=>{
         let taskDone = tasksByDay.filter(i=>{
             return i[2] == time || i[2].slice(0,2)== time.slice(0,2)
         })
@@ -21,7 +21,7 @@ function TimeTable({tasksByDay}) {
         }
     }
     const drawTime=()=>{
-        return dayArr.map((i)=>{
+        return dayArr.map(i=>{
             return  i < 10 ? <li key={i} className={`time-table ${makeTimeGlow("0"+i+":00") ? "glow" : ""}`}> 0{i}:00</li> 
             : <li key={i} className={`time-table ${makeTimeGlow(i+":00") ? "glow" : ""}`}> {i}:00</li>
         })

@@ -1,13 +1,13 @@
 import React, { useRef } from 'react'
 import "./CreateTask.css"
 function CreateTask({settaskItem}) {
-    const elem = useRef(0)
-    const taskName = useRef("")
-    const taskDay = useRef("")
-    const taskTime = useRef("")
+    const elem = useRef()
+    const taskName = useRef()
+    const taskDay = useRef()
+    const taskTime = useRef()
     const showPage = ()=>{elem.current.style.display = "block"}
     const hidePage = ()=>{elem.current.style.display = "none"}
-    const taskData = (e)=>{
+    const taskData = e=>{
         e.preventDefault() 
         settaskItem([taskName.current.value, taskDay.current.value, taskTime.current.value])
         taskName.current.value = ""

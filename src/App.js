@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React from 'react'
 import './App.css';
 import Container from './component/Container/Container';
 function App() {
