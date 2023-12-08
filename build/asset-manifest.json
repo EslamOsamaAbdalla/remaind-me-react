@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/remaind-me-react/static/css/main.d405fbae.css",
+    "main.js": "/remaind-me-react/static/js/main.5ed63eb2.js",
+    "index.html": "/remaind-me-react/index.html",
+    "main.d405fbae.css.map": "/remaind-me-react/static/css/main.d405fbae.css.map",
+    "main.5ed63eb2.js.map": "/remaind-me-react/static/js/main.5ed63eb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d405fbae.css",
+    "static/js/main.5ed63eb2.js"
+  ]
+}
