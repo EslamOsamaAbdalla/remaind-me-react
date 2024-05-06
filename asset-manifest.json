@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/remaind-me-react/static/css/main.d405fbae.css",
-    "main.js": "/remaind-me-react/static/js/main.442e8aeb.js",
+    "main.css": "/remaind-me-react/static/css/main.0acba932.css",
+    "main.js": "/remaind-me-react/static/js/main.ad7141f6.js",
     "index.html": "/remaind-me-react/index.html",
-    "main.d405fbae.css.map": "/remaind-me-react/static/css/main.d405fbae.css.map",
-    "main.442e8aeb.js.map": "/remaind-me-react/static/js/main.442e8aeb.js.map"
+    "main.0acba932.css.map": "/remaind-me-react/static/css/main.0acba932.css.map",
+    "main.ad7141f6.js.map": "/remaind-me-react/static/js/main.ad7141f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.d405fbae.css",
-    "static/js/main.442e8aeb.js"
+    "static/css/main.0acba932.css",
+    "static/js/main.ad7141f6.js"
   ]
 }
