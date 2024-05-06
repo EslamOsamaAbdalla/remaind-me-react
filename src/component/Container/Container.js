@@ -38,17 +38,24 @@ function Container() {
     let mounth = new Date().getMonth() + 1;
     let day = new Date().getDate();
     if (day < 10) {
+      if (mounth < 10) {
+        let thisDay = `${year}-0${mounth}-0${day}`;
+        let theFilter = allTasks.filter((x) => {
+          return x[1] === thisDay;
+        });
+        return settasksByDay(theFilter);
+      }
       let thisDay = `${year}-${mounth}-0${day}`;
       let theFilter = allTasks.filter((x) => {
         return x[1] === thisDay;
       });
-      settasksByDay(theFilter);
+      return settasksByDay(theFilter);
     } else {
       let thisDay = `${year}-${mounth}-${day}`;
       let theFilter = allTasks.filter((x) => {
         return x[1] === thisDay;
       });
-      settasksByDay(theFilter);
+      return settasksByDay(theFilter);
     }
   };
   return (
