@@ -3,6 +3,7 @@ import "./TimeTable.css";
 function TimeTable({ tasksByDay }) {
   useEffect(() => {
     drawTime();
+    // eslint-disable-next-line
   }, [tasksByDay]);
 
   let dayArr = [];

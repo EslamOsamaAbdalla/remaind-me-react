@@ -13,9 +13,11 @@ function Container() {
   useEffect(() => {
     let tasks = [...allTasks, taskItem];
     setallTasks(tasks);
+    // eslint-disable-next-line
   }, [taskItem]);
   useEffect(() => {
     showTasksByDate();
+    // eslint-disable-next-line
   }, [allTasks]);
   useEffect(() => {
     let filterItAll = allTasks;
@@ -23,6 +25,7 @@ function Container() {
       return i.length !== 0;
     });
     setallTasks(filterItAll);
+    // eslint-disable-next-line
   }, []);
   let day = () => {
     let year = new Date().getFullYear();
