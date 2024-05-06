@@ -61,7 +61,6 @@ function Container() {
   return (
     <div id="container">
       <h2>
-        {" "}
         <DateComponent day={day} /> <Status tasksByDay={tasksByDay} />
       </h2>
       <div className="data">

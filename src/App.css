@@ -1,21 +1,21 @@
-:root{
-    --main-color: #22092C;
-    --secound-color: #872341;
-    --third-color: #BE3144;
-    --forth-color: #F05941;
+:root {
+  --blue-color: #213e96;
+  --dark-blue-color: #061952;
+  --black-color: #0c0e12;
+  --white-color: #e6e6e6;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, var(--secound-color), var(--third-color));
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, var(--black-color), var(--blue-color));
 }

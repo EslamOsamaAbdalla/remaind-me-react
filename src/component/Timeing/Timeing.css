@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-.time-now{
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+.time-now {
+  text-align: center;
 }
-.time-now h2{
-    width: 200px;
+.time-now h2 {
+  width: 200px;
 }
-.time-now-count{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: var(--forth-color);
+.time-now-count {
+  font-family: "Orbitron", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--black-color);
 }

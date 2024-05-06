@@ -1,4 +1,11 @@
-#container h2 .state{
-    background-color: var(--forth-color);
-    padding: 8px;
+#container h2 .state {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 8px;
+}
+@media screen and (max-width: 600px) {
+  #container h2 .state {
+    padding: 8px 0;
+    margin-left: auto;
+  }
 }

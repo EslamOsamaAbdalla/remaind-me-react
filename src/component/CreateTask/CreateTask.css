@@ -1,65 +1,65 @@
-.add-task-btn{
-    position: fixed;
-    right: 2%;
-    bottom: 5%;
-    background-color: var(--main-color);
-    color: var(--third-color);
-    outline: 0;
-    border: 0;
-    padding: 15px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    cursor: pointer;
+.add-task-btn {
+  position: fixed;
+  right: 12%;
+  bottom: 12%;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
 }
-.add-task-page{
-    --main-color: #22092cd1;
-    position: absolute;
-    left: 5%;
-    top: 5%;
-    background-color: var(--main-color);
-    width: 90%;
-    height: 90%;
-    display: none;
+.add-task-page {
+  --main-color: #22092cd1;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  background-color: var(--main-color);
+  width: 90%;
+  height: 90%;
+  display: none;
 }
-.close{
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    font-size: 45px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    cursor: pointer;
-    user-select: none;
+.close {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  font-size: 45px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
 }
-.close:hover{
-    background-color: rgb(255, 52, 52);
+.close:hover {
+  background-color: rgb(255, 52, 52);
 }
-form{
-    height: 80%;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+form {
+  height: 80%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-form label{
-    margin: 15px;
-    text-transform: capitalize;
-    color: var(--third-color);
+form label {
+  margin: 15px;
+  text-transform: capitalize;
+  color: var(--white-color);
 }
-.add-task-submist{
-    background-color: var(--third-color);
-    color: var(--main-color);
-    outline: 0;
-    border: 0;
-    width: 120px;
-    height: 30px;
-    text-transform: capitalize;
-    margin: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    user-select: none;
+.add-task-submist {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  outline: 0;
+  border: 0;
+  width: 120px;
+  height: 30px;
+  text-transform: capitalize;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
 }
